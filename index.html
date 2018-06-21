@@ -1,12 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<title>mosby192网站</title>
+		<meta charset="utf-8" />
+		<title>Mosby个人博客</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/marked.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/prism.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/prism.css"/>
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
 	</head>
 	<body>
-		<div class="box">
-			欢迎访问mosby192网站
+		<!--侧边目录-->
+		<div id="aside" class="aside scroll"></div>
+		<!--右边正文-->
+		<div id="content" class="content scroll"></div>
+		<!--快捷键-->
+		<div id="keyboard" class="keyboard">
+			<div id="top" class="top button">顶部</div>
+			<div id="prev" class="prev button">上一篇</div>
+			<div id="next" class="next button">下一篇</div>
+			<div id="full" class="full button show">全屏</div>
 		</div>
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>

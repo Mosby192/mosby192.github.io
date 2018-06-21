@@ -1,0 +1,191 @@
+/*全局样式修改*/
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+body{
+	position: relative;
+	background-color: #f5f5d5;
+	overflow-x: hidden;
+}
+a{
+    color: #4682BE;
+    text-decoration: none;
+}
+li ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+/*高亮样式优化*/
+.content p code, .content li>code, .content h2>code, .content h3>code{
+	padding-left: 3px;
+    padding-right: 3px;
+    color: #c7254e;
+    background: #f9e6e6;
+}
+.content pre{
+	border-radius: 5px;
+	border: 2px solid #708090;
+}
+/*侧边栏样式*/
+.aside{
+	padding: 20px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+}
+.aside.aside-pc{
+	width: 260px;
+	border-right: 1px solid #CCC;
+	box-shadow: 0 0 30px #CCC;
+    -webkit-box-shadow: 0 0 40px #CCC;
+}
+.aside.aside-mobie{
+	right: 0;
+	bottom: 40px;
+}
+/*内容区样式*/
+.content{
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: absolute;
+	left: 300px;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.content.content-pc{
+	padding: 20px 90px 40px 40px;
+}
+.content.content-mobie{
+	padding: 20px;
+	bottom: 40px;
+}
+/*侧边目录样式*/
+.aside h1{
+	font-size: 24px;
+	cursor: pointer;
+}
+.aside h2{
+	font-size: 20px;
+	cursor: pointer;
+}
+.aside ol{
+	line-height: 28px;
+	font-size: 18px;
+}
+.aside ul{
+	line-height: 24px;
+	font-size: 16px;
+}
+.aside strong{
+	cursor: pointer;
+	color: #0077AA;
+	font-weight: normal;
+}
+.aside strong a{
+	color: #0077AA;
+}
+.aside ul a{
+	color: #0077AA;
+}
+/*pc端快捷键*/
+.keyboard-pc{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 30px;
+	height: 203px;
+	line-height: 50px;
+	width: 50px;
+	font-size: 12px;
+	text-align: center;
+	background-color: #ccc;
+	opacity: 0.6;
+	border-radius: 5px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.keyboard-pc .button:hover{
+	background-color: #999;
+}
+.keyboard-pc .button{
+	border-top: #999 1px solid;
+}
+.keyboard-pc #top{
+	border-top: none;
+}
+/*移动端快捷键*/
+.keyboard-mobie{
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 40px;
+	display: flex;
+	cursor: pointer;
+	background-color: #ccc;
+	border-top: 1px solid #999;
+	border-bottom: 1px solid #999;
+	-webkit-tap-highlight-color: transparent;
+}
+.keyboard-mobie .button{
+	flex: 1;
+	line-height: 40px;
+	text-align: center;
+	border-right: 1px solid #999;
+}
+.keyboard-mobie #top{
+	border-left: 1px solid #999;
+}
+/*滚动条优化*/
+.scroll.scroll-pc::-webkit-scrollbar{
+    width: 10px;    
+    height: 10px;
+}
+.scroll.scroll-pc::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+.scroll.scroll-pc::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+.content-pc pre::-webkit-scrollbar{
+    width: 10px;    
+    height: 10px;
+}
+.content-pc pre::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: rgba(0,0,0,0.2);
+}
+.content-pc pre::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 0;
+    background: rgba(0,0,0,0.1);
+}
+/*文章样式优化*/
+.li-link{
+	cursor: pointer;
+}
+.h-link{
+	cursor: pointer;
+}
+.content-top{
+	line-height: 24px;
+	background-color: #CCC;
+	padding: 20px 20px 20px 50px;
+	border-radius: 5px;
+	color: #4682BE;
+	font-size: 16px;
+}
